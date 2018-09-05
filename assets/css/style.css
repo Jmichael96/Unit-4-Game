@@ -2,11 +2,13 @@ body {
     font-family: 'Black Ops One', cursive;
     text-shadow: 0px 5px 7px maroon;
 }
+/* my header text */
 h1 {
 	text-align: center;
     font-weight: bold;
     font-size: .5in;
 }
+/* my instruction title */
 h3 {
     color: white;
     font-weight: bolder;
@@ -15,6 +17,7 @@ h3 {
     font-size: 33px;
     font-weight: bold;
 }
+/* paragraph instructions */
 .paragraph {
     font-size: 16px;
     background-color: black;
@@ -22,6 +25,7 @@ h3 {
     border-radius: 25px;
     color:white;
 }
+/* each individual card and its specific styles */
 .card {
     background-color: black;
     opacity: .6;
@@ -30,7 +34,7 @@ h3 {
 .card-body {
     color: white;
 }
-
+/* my jewel hover ransitions and sizing of images */
 img {
     width: 100px;
     height:100px;
@@ -56,6 +60,7 @@ img {
 #gemRow {
     margin-top: 115px;
 }
+/* reset button class, ID and hover effect for the button */
 button {
     margin-top: 55px;
 }
