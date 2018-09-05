@@ -12,7 +12,6 @@ h3 {
     font-weight: bolder;
 }
 #instructions {
-    margin:0px 0px 17px 30px;
     font-size: 33px;
     font-weight: bold;
 }
@@ -26,35 +25,41 @@ h3 {
 .card {
     background-color: black;
     opacity: .6;
-    border-radius:20px;
-    margin: 10px;
-    padding: 12px;
-    margin-top: 2px;
-    
+    border-radius:20px; 
 }
 .card-body {
     color: white;
 }
-.row {
-    margin-top: -106px;
-}
+
 img {
     width: 100px;
     height:100px;
+    margin:1px 32px 1px 34px;
+    /* transitions */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    /* reflection */
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
 }
-.grow img:hover{
-    height: 120px;
-    width: 120px;
-   
-    -webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-         -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-            transition: all 1s ease;
-  }
+.shrink img:hover{
 
+   
+    /*Reflection*/
+   -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.8)));
+  
+    /*Glow*/
+   -webkit-box-shadow: 0px 0px 20px rgba(182, 13, 13, 0.8);
+   -moz-box-shadow: 0px 0px 20px rgba(212, 35, 35, 0.8);
+   box-shadow: 0px 0px 20px rgba(8, 12, 230, 0.8);
+}
+#gemRow {
+    margin-top: 115px;
+}
+button {
+    margin-top: 55px;
+}
 #buttonReset {
-	margin: 10px 10px 0px 0px;
     padding: 24px;
     background-color: rgb(255, 0, 0);
     font-weight: bolder;
@@ -65,7 +70,4 @@ img {
     font-size:24px;
     background-color: blue;
     -webkit-transition: all 1s ease-in-out;
-}
-footer {
-    color:white;
 }
