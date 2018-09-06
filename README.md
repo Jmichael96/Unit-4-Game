@@ -1,4 +1,4 @@
-# Unit-4-Jewl-Game
+# Unit-4-Jewel-Game
 
 ## Click-The-Link
 https://jmichael96.github.io/Unit-4-Game/
