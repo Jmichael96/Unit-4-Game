@@ -1,7 +1,6 @@
 # Unit-4-Jewel-Game
 
-## Click-The-Link
-https://jmichael96.github.io/Unit-4-Game/
+## Click the link to play! https://jmichael96.github.io/Unit-4-Game/
 
   This is a simple game where the user attempts to match the 'points to match' number.
 
