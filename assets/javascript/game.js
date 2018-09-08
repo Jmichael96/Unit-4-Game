@@ -14,7 +14,9 @@ $(document).ready(function(){
     var matchScore = 0;
     var wins = 0;	
     var losses = 0;
-    
+
+    var winSound = new Audio("./assets/sounds/fireworkshow.mp3");
+    var btnSound = new Audio("./assets/sounds/sparkle.mp3");
             //If the gems do not have a given score then they will be assigned with a random number. 
             $("#diamond").on('click', function(){
                 if (diamondNum){
@@ -74,6 +76,7 @@ $(document).ready(function(){
                 givenScore();
                 $("#buttonReset").hide();
                 $("#gemRow").show();
+                winSound.pause();
             });
         };
     
@@ -86,6 +89,7 @@ $(document).ready(function(){
                 $("#gemRow").hide();
                 playAgain();
                 console.log("number of losses " + losses);
+                loseSound.play();
             }
     
             if (scoreNow == matchScore){
@@ -95,6 +99,7 @@ $(document).ready(function(){
                 $("#gemRow").hide();
                 playAgain();
                 console.log("number of wins " + wins);
+                winSound.play();
             };
         };
     
