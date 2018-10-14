@@ -1,7 +1,4 @@
-
-
 $(document).ready(function(){
-
 
     $("#buttonReset").hide();
     
@@ -17,51 +14,52 @@ $(document).ready(function(){
 
     var winSound = new Audio("./assets/sounds/fireworkshow.mp3");
     var btnSound = new Audio("./assets/sounds/sparkle.mp3");
+    
             //If the gems do not have a given score then they will be assigned with a random number. 
-            $("#diamond").on('click', function(){
-                if (diamondNum){
-                    scoreNow = scoreNow + diamondNum;
-                    //Replaces the HTML for the element with the scoreNow Id
-                    document.getElementById("scoreNow").innerHTML = scoreNow;
-                    scoreKeeper();
+        $("#diamond").on('click', function(){
+            if (diamondNum){
+                scoreNow = scoreNow + diamondNum;
+                //Replaces the HTML for the element with the scoreNow Id
+                document.getElementById("scoreNow").innerHTML = scoreNow;
+                scoreKeeper();
                 }else{
-                    diamondNum = Math.floor((Math.random() * 12) + 1);
-                    console.log("diamond value " + diamondNum);
-                }
-            });
+                diamondNum = Math.floor((Math.random() * 12) + 1);
+                console.log("diamond value " + diamondNum);
+                };
+             });
     
-            $("#amethyst").on('click', function(){
-                if (amethystNum){
-                    scoreNow = scoreNow + amethystNum;
-                    document.getElementById("scoreNow").innerHTML = scoreNow;
-                    scoreKeeper();
+        $("#amethyst").on('click', function(){
+            if (amethystNum){
+                scoreNow = scoreNow + amethystNum;
+                document.getElementById("scoreNow").innerHTML = scoreNow;
+                scoreKeeper();
                 }else{
-                    amethystNum = Math.floor((Math.random() * 12) + 1);
-                    console.log("amethyst value " + amethystNum);
-                }
-            });
+                amethystNum = Math.floor((Math.random() * 12) + 1);
+                console.log("amethyst value " + amethystNum);
+                };
+             });
     
-            $("#sapphire").on('click', function(){
-                if (sapphireNum){
-                    scoreNow = scoreNow + sapphireNum;
-                    document.getElementById("scoreNow").innerHTML = scoreNow;
-                    scoreKeeper();
-                }else{
-                    sapphireNum = Math.floor((Math.random() * 12) + 1);
-                    console.log("sapphire value " + sapphireNum);
-                }
-            });
+         $("#sapphire").on('click', function(){
+             if (sapphireNum){
+                 scoreNow = scoreNow + sapphireNum;
+                 document.getElementById("scoreNow").innerHTML = scoreNow;
+                 scoreKeeper();
+                 }else{
+                 sapphireNum = Math.floor((Math.random() * 12) + 1);
+                 console.log("sapphire value " + sapphireNum);
+                 };
+              });
     
-            $("#megagem").on('click', function(){
-                if (megagemNum){
-                    scoreNow = scoreNow + megagemNum;
-                    document.getElementById("scoreNow").innerHTML = scoreNow;
-                    scoreKeeper();
-                }else{
-                    megagemNum = Math.floor((Math.random() * 12) + 1);
-                    console.log("megagem value " + megagemNum);
-                }
-            });
+          $("#megagem").on('click', function(){
+              if (megagemNum){
+                  scoreNow = scoreNow + megagemNum;
+                  document.getElementById("scoreNow").innerHTML = scoreNow;
+                  scoreKeeper();
+                  }else{
+                  megagemNum = Math.floor((Math.random() * 12) + 1);
+                  console.log("megagem value " + megagemNum);
+                  };
+               });
     
         //This function will run when the game ends... and if clicked reset everthing to zero.
         function playAgain(){
@@ -90,7 +88,7 @@ $(document).ready(function(){
                 playAgain();
                 console.log("number of losses " + losses);
                 loseSound.play();
-            }
+            };
     
             if (scoreNow == matchScore){
                 wins++;
